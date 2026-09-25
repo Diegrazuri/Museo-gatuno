@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museo de Gatos Graciosos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background-color: #0f0e0d;
+      color: #f5f0e8;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1816;
+      border-bottom: 2px solid #d4af37;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #d4af37;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #a89f91;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #d4af37;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .exhibit {
+      background-color: #1a1816;
+      border: 1px solid #2c2926;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .exhibit:hover {
+      transform: translateY(-6px);
+    }
+
+    .exhibit img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background-color: #222;
+    }
+
+    .plaque {
+      padding: 18px;
+    }
+
+    .plaque h3 {
+      color: #f0d78c;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .plaque .artist {
+      color: #a89f91;
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .plaque p {
+      color: #c9c0b4;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      border-top: 1px solid #2c2926;
+      color: #a89f91;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐱 Museo de Gatos Graciosos</h1>
+    <p>Exposición permanente de las expresiones más épicas del reino felino</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Sala Principal</h2>
+
+    <div class="gallery">
+
+      <!-- Obra 1 -->
+      <div class="exhibit">
+        <img src="images/gato1.jpg" alt="Gato sorprendido">
+        <div class="plaque">
+          <h3>El Momento Exacto</h3>
+          <div class="artist">Anónimo · 2023</div>
+          <p>Capturado en el preciso instante en que descubrió que el atún se había acabado.</p>
+        </div>
+      </div>
+
+      <!-- Obra 2 -->
+      <div class="exhibit">
+        <img src="images/gato2.jpg" alt="Gato con cara de juicio">
+        <div class="plaque">
+          <h3>El Juicio Final</h3>
+          <div class="artist">Señor Bigotes · 2021</div>
+          <p>Te está evaluando. Y no estás pasando la prueba.</p>
+        </div>
+      </div>
+
+      <!-- Obra 3 -->
+      <div class="exhibit">
+        <img src="images/gato3.jpg" alt="Gato dormido">
+        <div class="plaque">
+          <h3>La Siesta Profesional</h3>
+          <div class="artist">Don Ronroneo · 2022</div>
+          <p>Posición 47 de las 200 posibles para dormir. Nivel: experto.</p>
+        </div>
+      </div>
+
+      <!-- Obra 4 -->
+      <div class="exhibit">
+        <img src="images/gato4.jpg" alt="Gato caótico">
+        <div class="plaque">
+          <h3>Operación: Derribar el Vaso</h3>
+          <div class="artist">Kaos · 2024</div>
+          <p>No hay explicación lógica. Solo instinto puro de destrucción.</p>
+        </div>
+      </div>
+
+      <!-- Obra 5 -->
+      <div class="exhibit">
+        <img src="images/gato5.jpg" alt="Gato confundido">
+        <div class="plaque">
+          <h3>¿Quién apagó la luz?</h3>
+          <div class="artist">Luna · 2020</div>
+          <p>Expresión clásica de quien acaba de ser sorprendido en plena travesura.</p>
+        </div>
+      </div>
+
+      <!-- Obra 6 -->
+      <div class="exhibit">
+        <img src="images/gato6.jpg" alt="Gato naranja juzgando">
+        <div class="plaque">
+          <h3>Desaprobación Felina</h3>
+          <div class="artist">Garfield Jr. · 2019</div>
+          <p>No digas nada. Él ya sabe lo que hiciste.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    Museo de Gatos Graciosos · Hecho con 💛 y mucho pelo de gato · 2026
+  </footer>
+
+</body>
+</html>
